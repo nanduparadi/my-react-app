@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Header from './header';
+import Events from './Event';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 function Test(){
   return <>
@@ -36,7 +37,21 @@ class Hari extends React.Component{
    
 
 
-root.render(<App/>);
+root.render(
+  <App name="xyz">
+    {/* <React.Fragment>
+      <button>one</button>
+      <button>two</button>
+      <button>three</button>
+    </React.Fragment> */}
+    <Events/>
+  </App>
+);
+
+
+
+  
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

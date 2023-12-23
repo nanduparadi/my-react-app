@@ -3,7 +3,8 @@ import './App.css';
 import Header from './header';
 import User from './User';
 
-function App() {
+function App(props) {
+  console.log("app js props",props)
   let userArr = [
     {
       name: "John Doe",
@@ -13,7 +14,7 @@ function App() {
     },
     {
       name: "monalisa",
-      is: 12,
+      id: 12,
       occupation: "tester Engineer",
       company: "ABC Corp",
     },
@@ -36,18 +37,29 @@ function App() {
     //   </header>
     // </div>
     <div>
+      <p style={{dispaly:'flex',gap:20}}>{props.children}</p>
+
       <Header />
-      {/* <h2>hello world</h2>
+      {
+        /* <h2>hello world</h2>
       <User name="chari" age = "23" />
       <User name="srinu" age= "34"/> */
-      userArr.map((res)=>{
-        return <User key={res.id} id={res.id} name={res.name} company = {res.company}/>
-      })
+        userArr.map((res) => {
+          return (
+            <User
+              key={res.id}
+              id={res.id}
+              name={res.name}
+              company={res.company}
+            />
+          );
+        })
       }
     </div>
   );
   
 }
+
 export let person = {
   name: "uday",
   age: 25,

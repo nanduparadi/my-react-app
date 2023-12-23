@@ -6,8 +6,19 @@ function Header(){
     }
     return (
       <>
-        <h1 className='pri'>react learn</h1>
+        <First />
+        <h1 className="pri">react learn</h1>
         <p style={s1}>reacto dom</p>
+      </>
+    );
+}
+
+function First(){
+    return (
+      <>
+        <p>sin</p>
+        <p>cos </p>
+        <p>tan</p>
       </>
     );
 }
