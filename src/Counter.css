@@ -1,0 +1,15 @@
+button.minus{
+    background-color: red;
+    color: white;
+}
+button.plus{
+    background-color: blue;
+    color: white;
+}
+.Warpper{
+    display: flex;
+
+}
+button:disabled{
+    opacity: 0.7;
+}
