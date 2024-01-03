@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './header';
 import User from './User';
+import Counter from './Counter';
 
 function App(props) {
   console.log("app js props",props)
@@ -39,7 +40,9 @@ function App(props) {
     <div>
       <p style={{dispaly:'flex',gap:20}}>{props.children}</p>
 
-      <Header />
+      {/* <Header /> */}
+      {/* <Counter id={person.age} name={person.name} loc={person.location} /> */}
+      {/* <Counter {...person}/> */}
       {
         /* <h2>hello world</h2>
       <User name="chari" age = "23" />
@@ -61,9 +64,11 @@ function App(props) {
 }
 
 export let person = {
-  name: "uday",
-  age: 25,
-  location: "ap",
+  name: "Nandu",
+  age: 21,
+  location: "guntur",
+  state:"andhar pardesh",
+  passion: "love to coding"
 };
 
 let x = 10;

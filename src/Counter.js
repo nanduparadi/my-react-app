@@ -1,12 +1,15 @@
 import { useState } from "react";
 import "./Counter.css"
+import App from "./App";
+function Counter(p){
 
-function Counter(){
+    console.log(p)
     let [counter,setCounter]=useState(0);
     let stock = 10;
     return (
       <>
-      <h2>counter app</h2>
+
+        <h2>counter app owns {p.name}</h2>
         <div className="Warpper">
           <button
             className="minus"

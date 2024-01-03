@@ -3,18 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import BackgroundChange from './BackgroundChange';
-import Header from './header';
-import Events from './Event';
-import Counter from './Counter';
+import Events from './Event.js';
+import TestEffect from './TestEffect.js';
+import Home from './Home.js';
+import About from './About.js';
+import Contact from './Contcat.js';
 const root = ReactDOM.createRoot(document.getElementById('root'));
-function Test(){
-  return <>
-  {/* <p>chari</p>
-  <p>chari</p> */}
-
-  </>
-}
 //this is function component
 function Headerr(){
   return (
@@ -40,15 +34,19 @@ class Hari extends React.Component{
 
 
 root.render(
-  <App name="xyz">
+  <App>
     {/* <React.Fragment>
       <button>one</button>
       <button>two</button>
       <button>three</button>
     </React.Fragment> */}
-    {/* <Events/> */}
     {/* <BackgroundChange /> */}
-    <Counter/>
+    {/* <Counter/> */}
+    {/* <TestEffect /> */}
+    {/* <Events/> */}
+    <Home />
+    <About />
+    <Contact />
   </App>
 );
 
